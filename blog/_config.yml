@@ -46,7 +46,7 @@ highlight:
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
+# per_page: Posts displayed per page. (0 = disable pHexo ¿?¿? LaTeX ¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?agination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
@@ -78,4 +78,6 @@ theme: Hacker
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/gerwang/gerwang.github.io.git
+  branch: master
