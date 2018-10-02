@@ -3,3 +3,7 @@
 <% }); %>
 
 <%- partial('components/pagination') %>
+
+<% if (theme.mathjax.enable) { %>
+    <script src="<%- theme.mathjax.src %>"></script> <% } 
+%>

@@ -1,8 +1,6 @@
 menu:
   Home: /
   Archives: /archives
-  Categories: /categories
-  Tags: /tags
 
 # gitment
 gitment: false
@@ -17,3 +15,12 @@ disqus_shortname: gerwang-github-io
 
 # google analytics
 googleTrackId: UA-126826784-1
+
+# Mathjax support
+mathjax:
+  enable: true,
+  per_page: true
+  src: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# auto excerpt
+enable_excerpt: true
