@@ -1,0 +1,3 @@
+[submodule "blog\\themes\\Hacker\\"]
+	path = blog\\themes\\Hacker\\
+	url = https://github.com/gerwang/Hacker.git
