@@ -49,4 +49,4 @@ Vue的特点是可以先部分使用Vue，再逐渐增加使用的范围。
 
 Vue的component像是在H5上还原了桌面GUI程序的设计方法。
 
-`props`可以把parent作用域的变量名传到component的作用域中。注意即使component中props的变量名正好和parent域中的data的变量名相同，仍然要使用`v-bind`来绑定一下。如<https://jsfiddle.net/gerwang/efxt0a83/17/>。另外我发现，凡是用`v-bind`操作绑定的属性，都不会出现在DOM树的属性中。
+`props`可以把parent作用域的变量名传到component的作用域中。注意即使component中props的变量名正好和parent域中的data的变量名相同，仍然要使用`v-bind`来绑定一下。如<https://jsfiddle.net/gerwang/efxt0a83/17/>。<del>另外我发现，凡是用`v-bind`操作绑定的属性，都不会出现在DOM树的属性中</del>UPD：似乎如果是HTML支持的属性，比如`id`，`v-bind`后仍然会出现在DOM中（可以在开发者工具Elements里面找到）。https://jsfiddle.net/gerwang/qz4k1pj7/5/
