@@ -1,5 +1,5 @@
 ---
-title: learn-vue-loader
+title: 学习vue loader
 tags: [vue-loader]
 date: 2018-10-06 00:34:03
 categories: 软工
