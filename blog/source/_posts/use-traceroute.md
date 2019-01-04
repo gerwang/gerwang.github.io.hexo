@@ -1,5 +1,5 @@
 ---
-title: use-traceroute
+title: 使用traceroute
 tags: [icmp, traceroute]
 date: 2018-10-08 20:29:16
 categories: 网原

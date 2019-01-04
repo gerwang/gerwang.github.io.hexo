@@ -1,5 +1,5 @@
 ---
-title: read-asm-4-x86
+title: 读X86汇编
 tags: [asm]
 date: 2018-10-06 22:39:10
 categories: 汇编

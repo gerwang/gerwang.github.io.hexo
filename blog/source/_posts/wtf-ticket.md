@@ -1,6 +1,6 @@
 ---
 title: WeChatTicket作业中的技术要点
-tags: [travis,wechat]
+tags: [travis, wechat]
 date: 2018-10-20 00:48:56
 categories: 软工
 ---
@@ -36,7 +36,7 @@ mysql支持对并发修改进行加锁，同时django提供了加锁的API，可
 - handler回复的消息大多是纯文本信息格式的，这是也可以用提供的`get_message()`加载HTML模板，将文字信息的模板放在独立的HTML文件中，方便文案修改。
 - 如果你的队友在写`APIView`，你会经常看见他们用抛异常的方式结束这次请求。然而这是因为`APIView`在调用之前框架就`try ... catch`包裹了一遍。在handler里面不能用抛出异常来结束这次请求，不然没有人`catch`，整个服务器就崩了。
 - 返回图文信息有8条的限制，如果发送超过8条，微信会直接向用户提示公众号故障，所以要在发送回复前进行处理，只取前8条。
-- 模板xml中的url字段可能会包含`&`字符（在query string中），为了防止它被转义成`&amp;`，需要使用`{% autoescape off %}`将url包裹起来。
+- 模板xml中的url字段可能会包含`&`字符（在query string中），为了防止它被转义成`&amp;`，需要使用`{` `% autoescape off %` `}`将url包裹起来。
 
 ## 测试设计
 
